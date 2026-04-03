@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Gupta - AIML Portfolio</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons (FontAwesome via CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Blur Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section glass-panel">
+            <div class="hero-content">
+                <h1 class="hero-title">Hey, I'm <span class="highlight">Shubham Gupta</span></h1>
+                <p class="hero-subtitle">AIML Student | AI & Machine Learning Enthusiast | Data Science Learner</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shubham-gupta-gupta" target="_blank" class="icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/353523434" target="_blank" class="icon-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/G19Shubham" target="_blank" class="icon-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:guptashubhamgupta43@gmail.com" target="_blank" class="icon-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://wa.me/919919925462" target="_blank" class="icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="profile.png.jpeg" alt="Shubham Gupta Profile" class="profile-img">
+            </div>
+        </section>
+
+        <!-- Navigation Grid Layout -->
+        <section class="nav-grid">
+            <a href="about.html" class="nav-card glass-panel" data-title="About">
+                <div class="card-icon"><i class="fa-regular fa-face-smile"></i></div>
+                <h3>About 😊</h3>
+            </a>
+            <a href="education.html" class="nav-card glass-panel" data-title="Education">
+                <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3>Education ✨</h3>
+            </a>
+            <a href="projects.html" class="nav-card glass-panel" data-title="Projects">
+                <div class="card-icon"><i class="fa-regular fa-folder-open"></i></div>
+                <h3>Projects 📁</h3>
+            </a>
+            <a href="skills.html" class="nav-card glass-panel" data-title="Skills">
+                <div class="card-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                <h3>Skills 📊</h3>
+            </a>
+            <a href="contact.html" class="nav-card glass-panel" data-title="Contact">
+                <div class="card-icon"><i class="fa-regular fa-user"></i></div>
+                <h3>Contact 👤</h3>
+            </a>
+            <a href="https://www.google.com/maps/place/Greater+Noida,+Uttar+Pradesh" target="_blank" class="nav-card glass-panel" data-title="Location">
+                <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <h3>Greater Noida 📍</h3>
+            </a>
+        </section>
+    </main>
+
+    <!-- Bottom Chat Search UI -->
+    <div class="chat-bar-container">
+        <form class="chat-box glass-panel" id="chat-form">
+            <input type="text" placeholder="Ask me anything about my work..." id="chat-input" autocomplete="off">
+            <button type="submit" class="send-btn" aria-label="Send to Telegram">
+                <i class="fa-brands fa-telegram" style="font-size: 1.2rem;"></i>
+            </button>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

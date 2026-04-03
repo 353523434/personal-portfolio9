@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Shubham Gupta</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons (FontAwesome via CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-container {
+            padding: 3rem;
+            margin-top: 1rem;
+        }
+        .page-title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            letter-spacing: -1px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            align-self: flex-start;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-5px);
+            border-color: rgba(58, 134, 255, 0.4);
+            box-shadow: 0 5px 15px rgba(58, 134, 255, 0.15);
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .edu-card {
+            padding: 1.5rem;
+            border-left: 4px solid var(--accent-purple);
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 0 var(--card-radius) var(--card-radius) 0;
+            transition: transform 0.3s ease;
+        }
+        .edu-card:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-left-color: var(--accent-blue);
+        }
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
+        .degree {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .year {
+            font-size: 0.9rem;
+            color: var(--accent-orange);
+            background: rgba(255, 0, 110, 0.1);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .institution {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .edu-details {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+        }
+        
+        /* Media Query for Timeline on Mobile */
+        @media (max-width: 600px) {
+            .edu-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .page-container {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Blur Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <main class="container" style="padding-top: 2rem;">
+        <a href="shubham.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        
+        <section class="page-container glass-panel">
+            <h2 class="page-title">My <span class="highlight">Education</span></h2>
+            
+            <div class="timeline">
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="degree">B.Tech in Artificial Intelligence & Machine Learning</div>
+                        <div class="year">2025 - 2028 (Present)</div>
+                    </div>
+                    <div class="institution">Noida Institute of Engineering College</div>
+                    <div class="edu-details">
+                        Focusing on core AI concepts, Deep Learning, Data Science, and building intelligent models. Active participant in technical clubs and regularly engaging in hackathons and coding competitions.
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="degree">Polytechnic</div>
+                        <div class="year">2022 - 2025</div>
+                    </div>
+                    <div class="institution">Government Polytechnic Rampur</div>
+                    <div class="edu-details">
+                        Gained practical, hands-on engineering skills and developed a deep understanding of core technical concepts.
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="degree">Intermediate</div>
+                        <div class="year">2022</div>
+                    </div>
+                    <div class="institution">SDJ Inter College, Sohanaria, Deoria</div>
+                    <div class="edu-details">
+                        Higher secondary education focusing on scientific fundamentals, mathematical logic, and analytical problem-solving.
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="degree">High School</div>
+                        <div class="year">2020</div>
+                    </div>
+                    <div class="institution">Navatappi Inter College, Rampurgarh, Deoria</div>
+                    <div class="edu-details">
+                        Early education providing a strong foundation in core academics, sciences, and mathematics.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

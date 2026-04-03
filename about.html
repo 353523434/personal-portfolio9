@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Shubham Gupta</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons (FontAwesome via CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-container {
+            padding: 3rem;
+            margin-top: 1rem;
+        }
+        .about-container h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            letter-spacing: -1px;
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .about-content p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            align-self: flex-start;
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-5px);
+            border-color: rgba(58, 134, 255, 0.4);
+            box-shadow: 0 5px 15px rgba(58, 134, 255, 0.15);
+        }
+        
+        .skills-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        
+        .skill-pill {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Blur Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <main class="container" style="padding-top: 2rem;">
+        <a href="shubham.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        
+        <section class="about-container glass-panel">
+            <h2>About <span class="highlight">Me</span></h2>
+            
+            <div class="about-content">
+                <p>Hello! I'm <strong>Shubham Gupta</strong>, an enthusiastic and driven student specializing in Artificial Intelligence and Machine Learning. My passion lies in extracting meaningful insights from data and building intelligent systems that solve real-world problems.</p>
+                <p>With a strong foundation in computer science and mathematics, I constantly explore the domains of deep learning, natural language processing, and computer vision. I believe in continuous learning and enjoy tackling complex challenges through code.</p>
+                <p>When I'm not training models or wrangling datasets, you can find me participating in hackathons, contributing to open-source projects, or exploring the latest advancements in AI tech.</p>
+                
+                <h3 style="margin-top: 1.5rem; color: var(--text-primary); font-size: 1.5rem;">Core Focus</h3>
+                <div class="skills-pills">
+                    <span class="skill-pill">Machine Learning</span>
+                    <span class="skill-pill">Deep Learning</span>
+                    <span class="skill-pill">Data Science</span>
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">TensorFlow</span>
+                    <span class="skill-pill">Computer Vision</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
